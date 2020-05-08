@@ -13,6 +13,7 @@ for i in range(5):
     dateRangeElements = driver.find_elements_by_xpath("//div[@id='widgetFieldDateRange']")
     
     if len(dateRangeElements) > 0:
+        time.sleep(3)
         dateRangeElements[0].click()
         break
     else:
@@ -30,7 +31,7 @@ time.sleep(3)
 
 tableData = driver.find_elements_by_xpath("//table[@id='curr_table']/tbody/tr/td")
 
-fileName = "goldprice_" + time.strftime("%d-%b-%Y_%H-%M-%S", time.localtime()) + ".csv"
+fileName = r"Result\goldprice_" + time.strftime("%d-%b-%Y_%H-%M-%S", time.localtime()) + ".csv"
 
 resultFile = open(fileName, 'w')
 
