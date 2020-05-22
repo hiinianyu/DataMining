@@ -9,3 +9,9 @@ print(df.describe())
 
 print(df.isnull().sum())
 
+#Remove data contain "-"
+df_clean = df[df['Volume'] != ' -']
+print(df_clean.head())
+
+print(df.shape)
+print(df_clean.shape)
