@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Result</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+    </head>
+    <body>
+        <h1>Result</h1>
+        <p class="paragraph">X1 = {{X1}}</p>
+        <p class="paragraph">X2 = {{X2}}</p>
+        <p class="paragraph">Gold price = {{M1}} * 2 Days Moving Average + {{M2}} * 5 Days Moving Average + {{C}}</p>
+        <p class="paragraph">Gold price = {{result}}</p>
+    </body>
+</html>
