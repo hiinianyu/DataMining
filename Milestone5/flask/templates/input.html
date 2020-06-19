@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/input.css') }}">
     </head>
     <body>        
-        <div>Gold price = {{data.M1}} * 2 Days Moving Average + {{data.M2}} * 5 Days Moving Average + {{data.C}} </div>
+        <div>Gold price prediction eequation = {{data.M1}} * 2 Days Moving Average + {{data.M2}} * 5 Days Moving Average + {{data.C}} </div>
         <h1>Hello, please enter your x1 and x2 value:</h1>
         <form action="{{ url_for('result') }}" method="POST">
             <input value={{data.M1}} name="M1" hidden>
